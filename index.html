@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>100 Days CSS Challenge #17</title>
+    <style>
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #363a3d;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.square {
+	position: absolute;
+	top: 50%;
+	width: 400px;
+	height: 200px;
+	background: #34d393;
+}
+
+.circle {
+	position: absolute;
+	top: 50%;
+	width: 400px;
+	height: 200px;
+	background: #34d393;
+	border-radius: 50%;
+	animation: bounce 1s linear infinite;
+}
+
+@keyframes bounce {
+	100% {
+		transform: translateY(-5%);
+	}
+	80% {
+		transform: translateY(-10%);
+	}
+	60% {
+		transform: translateY(-15%);
+	}
+	40% {
+		transform: translateY(-20%);
+	}
+	20% {
+		transform: translateY(-25%);
+	}
+	0% {
+		transform: translateY(50%);
+	}
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+        <div class="center"></div>
+          <div class="square"></div>
+          <div class="circle"></div>
+      </div>
+  </body>
+</html>
